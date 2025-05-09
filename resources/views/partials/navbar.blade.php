@@ -77,6 +77,12 @@
             <a href="#" class="logo">misjueces.mx</a>
             <ul class="nav-menu">
                 <li class="nav-item">
+                    <a href="#registro" class="nav-link">Ingreso</a>
+                </li>
+                <li class="nav-item">
+                    <a href="explorador.html" class="nav-link">Explora</a>
+                </li>
+                <li class="nav-item">
                     <a href="#privacidad" class="nav-link">Legales</a>
                 </li>
             </ul>
