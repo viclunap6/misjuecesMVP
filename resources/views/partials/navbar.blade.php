@@ -77,22 +77,7 @@
             <a href="#" class="logo">misjueces.mx</a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="acceso.html" class="nav-link">Ingresa</a>
-                </li>
-                <li class="nav-item">
-                    <a href="explorador.html" class="nav-link">Explora</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#conocenos" class="nav-link">Conócenos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#faq" class="nav-link">Preguntas Frecuentes</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#privacidad" class="nav-link">Política de Privacidad</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contacto" class="nav-link">Contacto</a>
+                    <a href="#privacidad" class="nav-link">Legales</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
