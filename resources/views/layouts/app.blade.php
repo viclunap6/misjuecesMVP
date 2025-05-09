@@ -3,6 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title') | MisJueces</title>
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.tailwindcss.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <!-- Estilos personalizados -->
+    <link href="{{ asset('styles/app.css') }}" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    @yield('content')
+
+    <script>
+        $(document).ready(function() {
+            $('.data-table').DataTable(); // Configuración básica de DataTables
+        });
+    </script>
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', config('app.name'))</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,13 +40,13 @@
             --glass-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
             --text-dark: #2b2d42;
             --text-light: #f8f9fa;
-            
+
             --h1-size: 3rem;
             --h2-size: 2.25rem;
             --h3-size: 1.75rem;
             --body-size: 1.1rem;
             --caption-size: 0.9rem;
-            
+
             --border-radius: 16px;
             --spacing-unit: 8px;
         }
@@ -495,16 +518,16 @@
                 --h2-size: 2rem;
                 --h3-size: 1.5rem;
             }
-            
+
             .section {
                 padding: 4rem 0;
             }
-            
+
             .hero {
                 min-height: auto;
                 padding: 6rem 0;
             }
-            
+
             .steps-line {
                 display: none;
             }
@@ -533,7 +556,7 @@
                     <div class="footer-logo">misjueces.mx</div>
                     <p>Plataforma del pueblo para el pueblo dedicada a la democratización del Poder Judicial en México.</p>
                 </div>
-                
+
                 <div class="footer-links">
                     <h3>Navegación</h3>
                     <ul>
@@ -541,7 +564,7 @@
                         <li><a href="explorador.html">Exploración</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-links">
                     <h3>Legales</h3>
                     <ul>
@@ -550,7 +573,7 @@
                         <li><a href="#cookies">Política de cookies</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-links">
                     <h3>Contacto</h3>
                     <ul>
@@ -566,7 +589,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2023 misjueces.mx - Todos los derechos reservados</p>
             </div>
