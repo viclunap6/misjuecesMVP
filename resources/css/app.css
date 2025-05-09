@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #34495E;
+    --accent-color: #3498DB;
+    --light-color: #ECF0F1;
+    --success-color: #27AE60;
+}
+
+/* Estilos Generales */
+body {
+    background-color: #274768;
+    padding-top: 80px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* Navbar Personalizada */
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--light-color) !important;
+    transform: translateY(-2px);
+}
+
+/* Sección Hero */
+.hero-section {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)),
+                url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f') center/cover;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 40px;
+}
+
+/* Tarjetas de Jueces */
+.juez-card {
+    background: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.juez-card:hover {
+    transform: translateY(-5px);
+}
+
+.rating-stars {
+    color: #F1C40F;
+    font-size: 1.2rem;
+}
+
+/* Formularios */
+.form-section {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border: none;
+    padding: 12px 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Sección de Contacto */
+.contact-info {
+    background: var(--light-color);
+    border-left: 4px solid var(--accent-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 40px 0;
+    margin-top: 80px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
